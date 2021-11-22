@@ -1,0 +1,95 @@
+@import 'base';
+
+
+.footer {
+    margin-top: 80px;
+    background-color: $footer-color;
+    padding: 0px 15px;
+    justify-content: center;
+
+    .footer__container {
+        width: 100%;
+        align-items: center;
+        margin: 80px 0px;
+        max-width: 1272px;
+
+        .footer__container--item {
+            align-items: center;
+            .footer--socials {
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin: 80px 0px;
+                
+                a {
+                    margin: 20px;
+                    
+                    img {
+                        transition: .3s ease-in-out;
+                        width: 40px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        img {
+                            width: 50px;
+                        }
+                      }
+    
+                &:hover {
+    
+                    img {
+                        transform: scale(1.1);;
+                    }
+                }
+                }
+            }
+
+        }
+
+
+        .footer--newsletter {
+
+            align-items: center;
+
+            p {
+                font-size: 16px;
+                font-weight: 700;
+                text-align: center;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+
+            button {
+                padding: 20px 0px;
+                color: $black;
+                background-color: transparent;
+                font-size: 24px;
+                font-weight: 700;
+                border-radius: 10px;
+                border: 3px solid black;
+                transition: .3s ease-in-out;
+                width: 270px;
+
+                &:hover {
+                    background-color: $base-color;
+                    color: $white;
+                    border: 3px solid transparent;
+                }
+            }
+
+            @media (min-width: 768px) {
+
+                button {
+                    width: 370px;
+                    font-size: 30px;
+                    
+                }
+                p {
+                    text-align: right;
+                }
+              }
+
+        }
+    }
+
+}

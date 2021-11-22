@@ -1,0 +1,55 @@
+@import 'base';
+
+
+.graphics {
+    width: 100%;
+    max-width: 1272px;
+    margin: 93px 15px;
+    padding: 0;
+    background-color: $white;
+
+    .row {
+        margin: 0;
+        justify-content: center;
+
+        .col {
+            padding: 15px;
+            justify-content: center;
+
+            .graphics--icon {
+                width: 211px;
+                height: 211px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0px;
+            
+                svg {
+                    width: auto;
+                }
+            }
+            &:nth-child(even) {
+                
+                .graphics--icon {
+                    background-color: $light-grey;
+                                
+                    svg {
+                        fill: $base-color;
+                    }
+                }
+                
+            }
+            &:nth-child(odd) {
+        
+                .graphics--icon {
+                    background-color: $grey;
+                }
+        
+            }
+        }
+
+
+    }
+
+    
+}

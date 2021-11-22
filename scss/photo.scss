@@ -1,0 +1,18 @@
+@import 'base'; 
+
+.photography {
+    width: 100vw;
+    height: auto;
+
+    
+
+    .row {
+        .photography--item {
+            padding: 0;
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+}

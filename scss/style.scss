@@ -1,0 +1,24 @@
+@import 'base';
+@import 'navbar';
+@import 'photo';
+@import 'vector';
+@import 'form';
+@import 'footer';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: $font;
+  background-color: $white;
+  color: $black;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/*# sourceMappingURL=style.scss.map */
